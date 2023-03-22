@@ -89,11 +89,12 @@ export const TaskListTableDefault: React.FC<{
                 <div>{t.name}</div>
               </div>
             </div>
-            {/* <div
+            <div
               className={styles.taskListCell}
               style={{
                 minWidth: rowWidth,
                 maxWidth: rowWidth,
+                display: 'none'
               }}
             >
               &nbsp;{toLocaleDateString(t.start, dateTimeOptions)}
@@ -103,10 +104,11 @@ export const TaskListTableDefault: React.FC<{
               style={{
                 minWidth: rowWidth,
                 maxWidth: rowWidth,
+                display: 'none'
               }}
             >
               &nbsp;{toLocaleDateString(t.end, dateTimeOptions)}
-            </div> */}
+            </div>
           </div>
         );
       })}
